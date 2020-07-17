@@ -1,22 +1,28 @@
 console.log(" ");
 
-function feetToMile(feet_value){
+function feetToMile(feet){
 
-    var mile=feet_value*0.000189394;
+    var mile=feet*0.000189394;
     mile=mile.toFixed(6);
 
-    if(feet_value<0)
+    if(feet<0)
         {
          console.log("Invalid Input, Negative value can not be calculated");
         }
     else{
-         console.log(feet_value+" feet equals "+mile+" mile");
+         console.log(feet+" feet equals "+mile+" mile");
         }   
 }
 
 feetToMile(300);
 
+
+
+
 console.log(" ");
+
+
+
 
 function woodCalculator(chair,table,bed){
     var total_wood;
@@ -31,6 +37,10 @@ function woodCalculator(chair,table,bed){
 }
 
 woodCalculator(3,2,1);
+
+
+
+
 
 console.log(" ");
 
@@ -58,11 +68,16 @@ console.log(" ");
 
 
 
+
+
+
+
+
  console.log(" ");
 
 
 
- var names=['ali','zaker','zuckerberg','Shams','abu'];
+ 
 
  
 
@@ -90,10 +105,12 @@ function tinyFriend(names){
         }
     }
 
-    console.log(list);
+    return list;
 }
 
-tinyFriend(names);
+var names=['ali','zaker','zuckerberg','Shams','abu'];
+
+console.log("The smallest names : "+tinyFriend(names));
 
 
 
